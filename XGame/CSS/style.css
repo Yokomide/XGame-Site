@@ -164,6 +164,7 @@ a { color: inherit;
    font-size: 12px;
    line-height: 28px;
    transition: .3s ease-in;
+   border-radius: 5%;
 }
 
 .game-card:hover .button {
@@ -227,6 +228,7 @@ a { color: inherit;
    font-size: 12px;
    line-height: 28px;
    transition: .3s ease-in;
+   border-radius: 5%;
 }
 
 .game-card2:hover .button2 {
@@ -286,6 +288,7 @@ a { color: inherit;
    font-size: 12px;
    line-height: 28px;
    transition: .3s ease-in;
+   border-radius: 5%;
 }
 .game-card3:hover .button3 {
    background: #fc5a5a;

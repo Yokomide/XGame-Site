@@ -117,10 +117,15 @@ a { color: inherit;
   margin-top: 55%;
   font-family: "Montserrat";
   border-radius: 10px;
+   transition: transform .5s ease;
 }
 
 .main-game-card:hover {
    border: 2px solid #FF6699;
+    -webkit-transform: scale(1.05);
+   -ms-transform: scale(1.05);
+   transform: scale(1.05);
+  
 }
 
 .main-game-card img {
@@ -181,11 +186,16 @@ a { color: inherit;
   margin-top: 20%;
   font-family: "Montserrat";
   border-radius: 10px;
+  transition: transform .5s ease;
 }
 
 .game-card:hover {
    border: 2px solid #FF6699;
    border-radius: 10px;
+    -webkit-transform: scale(1.05);
+   -ms-transform: scale(1.05);
+   transform: scale(1.05);
+  
 }
 
 .game-card img {
@@ -250,10 +260,15 @@ a { color: inherit;
     margin-top: 20%;
    font-family: "Montserrat";
    border-radius: 10px;
+   transition: transform .5s ease;
 }
 
 .game-card2:hover {
    border: 2px solid #FF6699;
+   -webkit-transform: scale(1.05);
+   -ms-transform: scale(1.05);
+   transform: scale(1.05);
+  
 }
 
 .game-card2 img {
@@ -311,11 +326,16 @@ a { color: inherit;
   margin-top: 20%;
    font-family: "Montserrat";
    border-radius: 10px;
+    transition: transform .5s ease;
 }
 
 .game-card3:hover {
    border: 2px solid #FF6699;
    border-radius: 10px;
+   -webkit-transform: scale(1.05);
+   -ms-transform: scale(1.05);
+   transform: scale(1.05);
+  
 }
 
 .game-card3 img {
@@ -381,3 +401,38 @@ a { color: inherit;
 }
 
 /** __________________**/
+.above {
+    position: relative;
+  width: 100%;
+}
+
+.above:hover .info-overlay{
+  height: 100%;
+}
+
+.decription{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.decription p{;
+  font-size: 15px;
+}
+.info-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(29,29,29, 70%);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  border-radius: 10px;
+  transition: .5s ease;
+}

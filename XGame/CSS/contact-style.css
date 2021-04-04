@@ -6,7 +6,6 @@ body {
   padding: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
-  line-height: 20px;
   background: #f8f8f8;
   height: 115%;
   width: 100%;
@@ -15,17 +14,15 @@ body {
 /** XGAME **/
 h1 {
 position: absolute;
-width: 50%;
-height: 20%;
+
 left: 40%;
-margin-top: 2vw;
+margin-top: 3vw;
 
 
 font-family: Montserrat;
 font-style: normal;
 font-weight: bold;
 font-size: 5.2vw;
-line-height: 122px;
 color: #F8F8F8;
 }
 /** __________________**/
@@ -37,15 +34,14 @@ h2{
 position: absolute;
 width: 50%;
 height: 20%;
-left: 42.5%;
-margin-top: 13.5vw;
+left: 38%;
+margin-top: 16vw;
 
 
 font-family: Montserrat;
 font-style: normal;
 font-weight: bold;
 font-size: 3vw;
-line-height: 122px;
 color: #1D1D1D;
 }
 /** __________________**/
@@ -67,44 +63,91 @@ color: #1D1D1D;
   width: 21%;
 
   left: 39.5%;
-  margin-top: 8vw;
+  margin-top: 9vw;
 
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 1vw;
-  line-height: 24px;
   text-align: center;
   color: #F8F8F8;
 }
 
 /** Меню - Главная_Каталог_Контакты*/
 
-.menu ul {
-  position: absolute;
-  width: 190px;
-  height: 134px;
-  left: 78%;
-  top: 50px;
-  
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 400px;
-  font-size: 1vw;
-  line-height: 37px;
-
-  color: #F8F8F8;
+ul {
   list-style-type: none;
-
 }
 
-.menu li:hover{
-  color:  #FF6699;
-}
 
 a { color: inherit;
   text-decoration: none;
 } 
+
+input[type=text], textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+
+input[type=submit] {
+  background-color:  #FF6699;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:  #FF0066;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+form {
+  margin-top: 20%;
+}
+
+
+.navbar {
+  margin-top: 12%;
+  width: 100%;
+  background-color: #1D1D1D;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #FF6699;
+}
+
 
 
 .footer {
@@ -127,3 +170,4 @@ a { color: inherit;
   vertical-align: middle;
   padding: 10 20px;
 }
+

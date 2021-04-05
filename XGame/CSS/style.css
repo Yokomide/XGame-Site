@@ -411,7 +411,7 @@ a { color: inherit;
   position: fixed; 
   z-index: 1; 
   padding-top: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 30%;
   left: 0;
   top: 0;
   width: 100%; 
@@ -430,12 +430,10 @@ a { color: inherit;
 }
 .modal-content p { 
   position: relative;
-  margin-top: -27px;
+  margin-top: -29px;
   color:  white;
   font-size: 17px;
-
   margin-left: 5%;
-
   text-align: left;
 }
 
@@ -449,7 +447,8 @@ a { color: inherit;
 
 .modal-content h3 {
   position: relative;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 550;
   color: white;
   margin-left: 5%;
   margin-right: 50%;
@@ -457,7 +456,6 @@ a { color: inherit;
    text-align: left;
 }
 .modal-content h4 {
-  margin-top: -1px;
   position: relative;
   margin-bottom: :10px;
   font-size: 25px;
@@ -466,29 +464,41 @@ a { color: inherit;
    text-align: left;
 }
 .requirements {
-  width: 32%;
+  width: 100%;
   background: rgb(24,24,24);
   padding-top: 30px;
   padding-bottom: 30px;
   border-radius: 10px;
   position: relative;
-  margin-top: -25%;
+  margin-left: 5%; 
+  margin-top: 5%;
   right: 5%;
   color: white;
   font-size: 1%;
-  float: right;
+  float: none;
   text-align: left;
+}
 
+.requirements h3{
+  margin-top: 5px;
+  font-size: 30px;
 }
 
 .requirements p {
   line-height: 2 ;
   margin-top: 0 ;
   margin-bottom: 0 ;
-  text-indent: 22px ;
 }
-
-
+@media screen and (min-width: 601px) {
+  .requirements p{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .requirements p{
+    font-size: 15px;
+  }
+}
 .image {
   position: relative;
   margin-top: -32px;

@@ -229,68 +229,6 @@ a { color: inherit;
   transition: transform .5s ease;
 }
 
-.game-card:hover {
-   border: 2px solid #FF6699;
-   border-radius: 10px;
-    -webkit-transform: scale(1.05);
-   -ms-transform: scale(1.05);
-   transform: scale(1.05);
-  
-}
-
-.game-card img {
-   display: block;
-   width: 100%;
-   border-radius: 10px;
-
-}
-#gameImg {
-  cursor: pointer;
-  transition: 0.3s;
-}
-#gameImg hover {
-  opacity: 0.7;
-}
-
-.game-list {
-   background: #1D1D1D;
-   padding: 15px 0;
-   border-radius: 10px;
-}
-.game-list h3 {
-   font-size: 18px;
-   font-weight: 400;
-   color: #F8F8F8;
-   margin: 0 0 10px 0;
-}
-
-.price {
-   font-size: 16px;
-   color: #FF6699;
-   display: block;
-   margin-bottom: 12px;
-}
-
-.button {
-   text-decoration: none;
-   display: inline-block;
-   padding: 0 12px;
-   background: #1D1D1D;
-   color: white;
-   text-transform: uppercase;
-   font-size: 12px;
-   line-height: 28px;
-   transition: .3s ease-in;
-   border-radius: 5%;
-}
-
-.game-card:hover .button {
-   background: #fc5a5a;
-}
-/** __________________**/
-
-
-/** Карточка N2 **/
 .game-card2 {
    width: 20%;
    margin-top: 4%;
@@ -303,60 +241,7 @@ a { color: inherit;
    transition: transform .5s ease;
 }
 
-.game-card2:hover {
-   border: 2px solid #FF6699;
-   -webkit-transform: scale(1.05);
-   -ms-transform: scale(1.05);
-   transform: scale(1.05);
-  
-}
 
-.game-card2 img {
-   display: block;
-   width: 100%;
-   border-radius: 10px;
-}
-
-.game-list2 {
-  border-radius: 10px;
-   background: #1D1D1D;
-   padding: 15px 0;
-}
-
-.game-list2 h3 {
-   font-size: 18px;
-   font-weight: 400;
-   color: #F8F8F8;
-   margin: 0 0 10px 0;
-}
-
-.price2 {
-   font-size: 16px;
-   color: #FF6699;
-   display: block;
-   margin-bottom: 12px;
-}
-
-.button2 {
-   text-decoration: none;
-   display: inline-block;
-   padding: 0 12px;
-   background: #1D1D1D;
-   color: white;
-   text-transform: uppercase;
-   font-size: 12px;
-   line-height: 28px;
-   transition: .3s ease-in;
-   border-radius: 5%;
-}
-
-.game-card2:hover .button2 {
-   background: #fc5a5a;
-}
-/** __________________**/
-
-
-/** Карточка N3 **/
 .game-card3 {
    width: 20%;
    margin-top: 4%;
@@ -369,7 +254,7 @@ a { color: inherit;
     transition: transform .5s ease;
 }
 
-.game-card3:hover {
+.game-card:hover, .game-card2:hover, .game-card3:hover {
    border: 2px solid #FF6699;
    border-radius: 10px;
    -webkit-transform: scale(1.05);
@@ -378,29 +263,32 @@ a { color: inherit;
   
 }
 
-.game-card3 img {
+.game-card img, .game-card2 img, .game-card3 img {
    display: block;
    width: 100%;
-   border-radius: 10px 10px 0 0;
-}
-.game-list3 {
    border-radius: 10px;
+}
+
+.game-list, .game-list2, .game-list3 {
    background: #1D1D1D;
    padding: 15px 0;
+   border-radius: 10px;
 }
-.game-list3 h3 {
+.game-list h3, .game-list2 h3, .game-list3 h3 {
    font-size: 18px;
    font-weight: 400;
    color: #F8F8F8;
    margin: 0 0 10px 0;
 }
-.price3 {
+
+.price, .price2, .price3 {
    font-size: 16px;
    color: #FF6699;
    display: block;
    margin-bottom: 12px;
 }
-.button3 {
+
+.button, .button2, .button3 {
    text-decoration: none;
    display: inline-block;
    padding: 0 12px;
@@ -412,10 +300,12 @@ a { color: inherit;
    transition: .3s ease-in;
    border-radius: 5%;
 }
-.game-card3:hover .button3 {
+
+.game-card:hover .button, .game-card2:hover .button2, .game-card3:hover .button3 {
    background: #fc5a5a;
 }
 /** __________________**/
+
 
 
 /** Футер **/
@@ -475,5 +365,117 @@ a { color: inherit;
   height: 0;
   border-radius: 10px;
   transition: .5s ease;
+   cursor: pointer;
 }
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 5%;
+  padding-bottom: 30%;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 80%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #1D1D1D;
+  margin: auto;
+  width: 80%;
+  border-radius: 10px;
+   padding-bottom: 50px;
+}
+.modal-content p { 
+  width: 90%;
+  position: relative;
+  margin-top: -29px;
+  color:  white;
+  font-size: 17px;
+  margin-left: 5%;
+  text-align: left;
+}
+
+.modal-content h2 {
+  position: relative;
+  font-size: 50px;
+  color: white;
+  left: 5%;
+  text-align: left;
+}
+
+.modal-content h3 {
+  position: relative;
+  font-size: 18px;
+  font-weight: 550;
+  color: white;
+  margin-left: 5%;
+  margin-right: 50%;
+  margin-top: -2%;
+   text-align: left;
+}
+.modal-content h4 {
+  position: relative;
+  margin-bottom: :10px;
+  font-size: 25px;
+  margin-left: 5%;
+  color:  #FF6699;
+   text-align: left;
+}
+.requirements {
+  width: 100%;
+  background: rgb(24,24,24);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  position: relative;
+  margin-left: 5%; 
+  margin-top: 5%;
+  right: 5%;
+  color: white;
+  font-size: 1%;
+  float: none;
+  text-align: left;
+}
+
+.requirements h3{
+  margin-top: 5px;
+  font-size: 30px;
+}
+
+.requirements p {
+  line-height: 2 ;
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+}
+
+.image {
+  position: relative;
+  margin-top: -32px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.close, .close1, .close2{
+  z-index: 1;
+  position: relative;
+  top: 5px;
+  right: 1%;
+  float: right;
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close1:hover, .close2:hover,
+.close:focus, .close1:focus, .close1:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 

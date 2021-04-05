@@ -9,6 +9,8 @@ body {
   height: 125%;
   width: 100%;
 }
+
+
 ::selection {
   color: white;
   background: black;
@@ -27,14 +29,24 @@ body {
    border-radius: 50px;
 }
 
+@media screen and (min-width: 601px) {
+  .requirements p{
+    width: 80%;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .requirements p{
+    font-size: 15px;
+  }
+}
+
 /** XGAME **/
 h1 {
 position: absolute;
-
 left: 40%;
-margin-top: 3vw;
-
-
+margin-top: 3vw
+;
 font-family: Montserrat;
 font-style: normal;
 font-weight: bold;
@@ -127,21 +139,13 @@ color: #1D1D1D;
 }
 
 ul {
-
   list-style-type: none;
-
 }
-
-
-a { color: inherit;
-  text-decoration: none;
-} 
-
 /** __________________**/
 
 
 
-/** Карточка N1 **/
+/** Карточки **/
 
 .game-card {
   position: absolute;
@@ -153,65 +157,7 @@ a { color: inherit;
    font-family: "Montserrat";
    border-radius: 10px;
    transition: transform .5s ease;
-
 }
-
-.game-card:hover {
-   border: 2px solid #FF6699;
-   border-radius: 10px;
-   -webkit-transform: scale(1.05);
-   -ms-transform: scale(1.05);
-   transform: scale(1.05);
-  
-}
-
-.game-card img {
-   display: block;
-   width: 100%;
-   border-radius: 10px;
-}
-
-.game-list {
-   background: #1D1D1D;
-   padding: 15px 0;
-   border-radius: 10px;
-}
-.game-list h3 {
-   font-size: 18px;
-   font-weight: 400;
-   color: #F8F8F8;
-   margin: 0 0 10px 0;
-}
-
-.price {
-   font-size: 16px;
-   color: #FF6699;
-   display: block;
-   margin-bottom: 12px;
-}
-
-.button {
-   text-decoration: none;
-   display: inline-block;
-   padding: 0 12px;
-   background: #1D1D1D;
-   color: white;
-   text-transform: uppercase;
-   font-size: 12px;
-   line-height: 28px;
-   transition: .3s ease-in;
-   border-radius: 5%;
-}
-
-.game-card:hover .button {
-   background: #fc5a5a;
-}
-/** ______________________ **/
-
-
-
-
-/** Карточка N2 **/
 
 .game-card2 {
  position: absolute;
@@ -223,62 +169,6 @@ a { color: inherit;
    border-radius: 10px;
    transition: transform .5s ease;
 }
-
-.game-card2:hover {
-   border: 2px solid #FF6699;
-   border-radius: 10px;
-   -webkit-transform: scale(1.05);
-   -ms-transform: scale(1.05);
-   transform: scale(1.05);
-}
-
-.game-card2 img {
-   display: block;
-   width: 100%;
-   border-radius: 10px;
-}
-
-.game-list2 {
-  border-radius: 10px;
-   background: #1D1D1D;
-   padding: 15px 0;
-}
-
-.game-list2 h3 {
-   font-size: 18px;
-   font-weight: 400;
-   color: #F8F8F8;
-   margin: 0 0 10px 0;
-}
-
-.price2 {
-   font-size: 16px;
-   color: #FF6699;
-   display: block;
-   margin-bottom: 12px;
-}
-
-.button2 {
-   text-decoration: none;
-   display: inline-block;
-   padding: 0 12px;
-   background: #1D1D1D;
-   color: white;
-   text-transform: uppercase;
-   font-size: 12px;
-   line-height: 28px;
-   transition: .3s ease-in;
-   border-radius: 5%;
-}
-
-.game-card2:hover .button2 {
-   background: #fc5a5a;
-}
-/** ______________________ **/
-
-
-
-/** Карточка N3**/
 
 .game-card3 {
   position: absolute;
@@ -292,37 +182,41 @@ a { color: inherit;
    transition: transform .5s ease;
 }
 
-.game-card3:hover {
+.game-card:hover, .game-card2:hover, .game-card3:hover {
    border: 2px solid #FF6699;
    border-radius: 10px;
    -webkit-transform: scale(1.05);
    -ms-transform: scale(1.05);
    transform: scale(1.05);
+  
 }
 
-.game-card3 img {
+.game-card img, .game-card2 img, .game-card3 img {
    display: block;
    width: 100%;
-   border-radius: 10px 10px 0 0;
-}
-.game-list3 {
    border-radius: 10px;
+}
+
+.game-list, .game-list2, .game-list3 {
    background: #1D1D1D;
    padding: 15px 0;
+   border-radius: 10px;
 }
-.game-list3 h3 {
+.game-list h3, .game-list2 h3, .game-list3 h3 {
    font-size: 18px;
    font-weight: 400;
    color: #F8F8F8;
    margin: 0 0 10px 0;
 }
-.price3 {
+
+.price, .price2, .price3 {
    font-size: 16px;
    color: #FF6699;
    display: block;
    margin-bottom: 12px;
 }
-.button3 {
+
+.button, .button2, .button3 {
    text-decoration: none;
    display: inline-block;
    padding: 0 12px;
@@ -334,10 +228,12 @@ a { color: inherit;
    transition: .3s ease-in;
    border-radius: 5%;
 }
-.game-card3:hover .button3 {
+
+.game-card:hover .button, .game-card2:hover .button2, .game-card3:hover .button3 {
    background: #fc5a5a;
 }
-/** ________________________**/
+/** ______________________ **/
+
 
 
 /** Футер **/
@@ -350,7 +246,6 @@ a { color: inherit;
   height: 7%;
   background-color: #1D1D1D;
     text-align: center;
-
 }
 
 .footer p{
@@ -403,9 +298,6 @@ a { color: inherit;
   cursor: pointer;
 }
 
-
-
-
 .modal {
   display: none; 
   position: fixed; 
@@ -429,6 +321,7 @@ a { color: inherit;
    padding-bottom: 50px;
 }
 .modal-content p { 
+  width: 90%;
   position: relative;
   margin-top: -29px;
   color:  white;
@@ -489,16 +382,7 @@ a { color: inherit;
   margin-top: 0 ;
   margin-bottom: 0 ;
 }
-@media screen and (min-width: 601px) {
-  .requirements p{
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .requirements p{
-    font-size: 15px;
-  }
-}
+
 .image {
   position: relative;
   margin-top: -32px;
@@ -506,7 +390,7 @@ a { color: inherit;
   border-radius: 10px 10px 0 0;
 }
 
-.close {
+.close, .close1{
   z-index: 1;
   position: relative;
   top: 5px;
@@ -516,9 +400,11 @@ a { color: inherit;
   font-size: 28px;
   font-weight: bold;
 }
-.close:hover,
-.close:focus {
-  color: #000;
+
+.close:hover, .close1:hover,
+.close:focus, .close1:focus {
+  color: black;
   text-decoration: none;
   cursor: pointer;
+}
 

@@ -400,6 +400,7 @@ a { color: inherit;
   height: 0;
   border-radius: 10px;
   transition: .5s ease;
+  cursor: pointer;
 }
 
 

@@ -9,10 +9,23 @@ btn.onclick = function() {
   modal.style.display = "block";
 }
 
+
 span.onclick = function() {
   modal.style.display = "none";
 }
 
+window.onclick = function(event) {
+   if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+   if (event.target == modal) {
+    modal.style.display = "none";
+  }
+
+}
 
 
 
@@ -27,10 +40,24 @@ btn1.onclick = function() {
   modal1.style.display = "block";
 }
 
+
 span1.onclick = function() {
   modal1.style.display = "none";
 }
 
+window.onclick = function(event) {
+
+   if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+   if (event.target == modal) {
+    modal.style.display = "none";
+  }
+
+}
 
 
 
@@ -49,8 +76,6 @@ span2.onclick = function() {
   modal2.style.display = "none";
 }
 
-
-
 var modal3 = document.getElementById("myModal3");
 
 var btn3 = document.getElementById("myBtn3");
@@ -65,17 +90,12 @@ span3.onclick = function() {
   modal3.style.display = "none";
 }
 
-
-
-
-
 window.onclick = function(event) {
 
 if (event.target == modal3) {
     modal3.style.display = "none";
   }
-
-   if (event.target == modal2) {
+  if (event.target == modal2) {
     modal2.style.display = "none";
   }
   if (event.target == modal1) {
@@ -84,8 +104,8 @@ if (event.target == modal3) {
    if (event.target == modal) {
     modal.style.display = "none";
   }
-
 }
+
 
 
 

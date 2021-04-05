@@ -1,5 +1,5 @@
 html{
-  height: 100%
+
 }
 body {
   margin: 0;
@@ -7,10 +7,28 @@ body {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   background: #f8f8f8;
-  height: 115%;
+  height: 150%;
   width: 100%;
 }
 
+::selection {
+  color: white;
+  background: black;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: #1D1D1D;
+}
+ 
+::-webkit-scrollbar-track {
+  border-radius: 50px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #999999;
+   border-radius: 50px;
+}
 /** XGAME **/
 h1 {
 position: absolute;
@@ -31,12 +49,9 @@ color: #F8F8F8;
 /** Топ продаж **/
 
 h2{
-position: absolute;
+position: relative;
 width: 50%;
-height: 20%;
 left: 38%;
-margin-top: 16vw;
-
 
 font-family: Montserrat;
 font-style: normal;
@@ -50,7 +65,6 @@ color: #1D1D1D;
 /** Header **/
 
 .s-header {
-  position: absolute;
   width: 100%;
   height: 14vw;
   background: #1D1D1D;
@@ -74,6 +88,44 @@ color: #1D1D1D;
 }
 
 /** Меню - Главная_Каталог_Контакты*/
+
+.navbar {
+  margin-top: -10px;
+  width: 100%;
+  background-color: #1D1D1D;
+  overflow: auto;
+  z-index: 1;
+}
+
+.navbar a {
+ display: block;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  position: relative;
+  top: 0;
+  transform: none;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #FF6699;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.content {
+  padding: 1%;
+}
 
 ul {
   list-style-type: none;
@@ -116,37 +168,9 @@ input[type=submit]:hover {
 }
 
 form {
-  margin-top: 20%;
-}
-
-
-.navbar {
-  margin-top: 12%;
-  width: 100%;
-  background-color: #1D1D1D;
-  overflow: auto;
-}
-
-.navbar a {
-  float: left;
-  text-align: center;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
   position: relative;
-  top: 0;
-  left: 0;
-  transform: none;
 }
 
-.navbar a:hover {
-  background-color: #000;
-}
-
-.active {
-  background-color: #FF6699;
-}
 
 
 
@@ -170,4 +194,3 @@ form {
   vertical-align: middle;
   padding: 10 20px;
 }
-

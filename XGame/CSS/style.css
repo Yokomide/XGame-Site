@@ -1,5 +1,4 @@
 html{
-  height: 100%
 }
 body {
   margin: 0;
@@ -7,12 +6,25 @@ body {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   background: #f8f8f8;
-  height: 115%;
+  height: 125%;
   width: 100%;
 }
 ::selection {
   color: white;
   background: black;
+}
+::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: #1D1D1D;
+}
+ 
+::-webkit-scrollbar-track {
+  border-radius: 50px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #999999;
+   border-radius: 50px;
 }
 
 /** XGAME **/
@@ -35,11 +47,10 @@ color: #F8F8F8;
 /** Топ продаж **/
 
 h2{
-position: absolute;
+position: relative;
 width: 50%;
-height: 20%;
-left: 40%;
-margin-top: 16vw;
+left: 40.8%;
+margin-top: 1%;
 
 
 font-family: Montserrat;
@@ -54,7 +65,6 @@ color: #1D1D1D;
 /** Header **/
 
 .s-header {
-  position: absolute;
   width: 100%;
   height: 14vw;
   background: #1D1D1D;
@@ -78,6 +88,43 @@ color: #1D1D1D;
 }
 
 /** Меню - Главная_Каталог_Контакты*/
+.navbar {
+ margin-top: -10px;
+  width: 100%;
+  background-color: #1D1D1D;
+  overflow: auto;
+  z-index: 1;
+}
+
+.navbar a {
+ display: block;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  position: relative;
+  top: 0;
+  transform: none;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #FF6699;
+}
+.content {
+  padding: 1%;
+} 
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 ul {
 
@@ -98,11 +145,11 @@ a { color: inherit;
 
 .game-card {
   position: absolute;
-   width: 20%;
+   width: 18%;
    text-align: center;
    background: #1D1D1D;
-   margin-left: 15%;
-   margin-top: 22%;
+   margin-left: 19%;
+   margin-top:1.3%;
    font-family: "Montserrat";
    border-radius: 10px;
    transition: transform .5s ease;
@@ -172,7 +219,6 @@ a { color: inherit;
    text-align: center;
    background:  #1D1D1D;
    margin-left: 40%;
-   margin-top: 22%;
    font-family: "Montserrat";
    border-radius: 10px;
    transition: transform .5s ease;
@@ -236,11 +282,11 @@ a { color: inherit;
 
 .game-card3 {
   position: absolute;
-   width: 20%;
+     width: 18%;
+    margin-top:1.3%;
    text-align: center;
    background:  #1D1D1D;
-   margin-left: 65%;
-   margin-top: 22%;
+   margin-left: 63%;
    font-family: "Montserrat";
    border-radius: 10px;
    transition: transform .5s ease;
@@ -319,7 +365,7 @@ a { color: inherit;
 
 /** ________________________**/
 .above {
-    position: relative;
+  position: relative;
   width: 100%;
 }
 
@@ -338,9 +384,11 @@ a { color: inherit;
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.decription p{;
+
+.decription p{
   font-size: 15px;
 }
+
 .info-overlay {
   position: absolute;
   bottom: 0;
@@ -354,44 +402,19 @@ a { color: inherit;
   transition: .5s ease;
 }
 
-.navbar {
-  margin-top: 12%;
-  width: 100%;
-  background-color: #1D1D1D;
-  overflow: auto;
-}
 
-.navbar a {
-  float: left;
-  text-align: center;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-  position: relative;
-  top: 0;
-  left: 0;
-  transform: none;
-}
-
-.navbar a:hover {
-  background-color: #000;
-}
-
-.active {
-  background-color: #FF6699;
-}
 
 
 .modal {
   display: none; 
   position: fixed; 
   z-index: 1; 
-  padding-top: 100px; 
+  padding-top: 5%;
+  padding-bottom: 5%;
   left: 0;
   top: 0;
   width: 100%; 
-  height: 100%; 
+  height: 80%; 
   overflow: auto; 
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.4); 
@@ -400,43 +423,88 @@ a { color: inherit;
 .modal-content {
   background-color: #1D1D1D;
   margin: auto;
-  border: 1px solid #888;
   width: 80%;
   border-radius: 10px;
+   padding-bottom: 50px;
 }
-.modal-content p {
-  margin-bottom: :10px;
+.modal-content p { 
+  position: relative;
+  margin-top: -27px;
   color:  white;
-  text-align: center;
+  font-size: 17px;
+
+  margin-left: 5%;
+
+  text-align: left;
 }
 
-.modal-content h5 {
-  margin-bottom: :10px;
+.modal-content h2 {
+  position: relative;
   font-size: 50px;
-  color:  white;
-  text-align: center;
-}
-.modal-content h3 {
-  margin-bottom: :10px;
-  font-size: 30px;
-  color:  white;
-  text-align: center;
+  color: white;
+  left: 5%;
+  text-align: left;
 }
 
+.modal-content h3 {
+  position: relative;
+  font-size: 20px;
+  color: white;
+  margin-left: 5%;
+  margin-right: 50%;
+  margin-top: -2%;
+   text-align: left;
+}
+.modal-content h4 {
+  margin-top: -1px;
+  position: relative;
+  margin-bottom: :10px;
+  font-size: 25px;
+  margin-left: 5%;
+  color:  #FF6699;
+   text-align: left;
+}
+.requirements {
+  width: 32%;
+  background: rgb(24,24,24);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  position: relative;
+  margin-top: -25%;
+  right: 5%;
+  color: white;
+  font-size: 1%;
+  float: right;
+  text-align: left;
+
+}
+
+.requirements p {
+  line-height: 2 ;
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  text-indent: 22px ;
+}
+
+
+.image {
+  position: relative;
+  margin-top: -32px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
 
 .close {
-  color: #aaaaaa;
+  z-index: 1;
+  position: relative;
+  top: 5px;
+  right: 1%;
   float: right;
+  color: #aaaaaa;
   font-size: 28px;
   font-weight: bold;
 }
-
-.image {
-  width: 100%;
-  border-radius: 10px;
-
-}
-
 .close:hover,
 .close:focus {
   color: #000;

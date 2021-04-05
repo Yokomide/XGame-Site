@@ -29,6 +29,10 @@ body {
    border-radius: 50px;
 }
 
+::-webkit-scrollbar-thumb:hover {
+  background: #CCCCCC;
+}
+
 @media screen and (min-width: 601px) {
   .requirements p{
     width: 80%;
@@ -344,7 +348,7 @@ ul {
   font-weight: 550;
   color: white;
   margin-left: 5%;
-  margin-right: 50%;
+    margin-right: 20%;
   margin-top: -2%;
    text-align: left;
 }

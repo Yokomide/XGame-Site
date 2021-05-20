@@ -157,9 +157,9 @@ a { color: inherit;
 
 .main-game-card {
   position: relative;
-  width: 69.8vw;
+  width: 71.8vw;
   background:  #1D1D1D;
-  margin-left: 15.3%;
+  margin-left: 14.4%;
   font-family: "Montserrat";
   border-radius: 10px;
   transition: transform .5s ease;
@@ -181,7 +181,7 @@ a { color: inherit;
 
 .game-main {
   width: 100%;
-  height: 4.7vw;
+  height: 5vw;
   position: relative;
   margin-top: -6.8%;
   border-radius: 10px;
@@ -231,24 +231,24 @@ a { color: inherit;
 /** Карточка N1 **/
 
 .game-card {
-  width: 20%;
+  width: 17%;
   margin-top: 4%;
   position: absolute;
   text-align: center;
   background: #1D1D1D;
-  margin-left: 15%;
+  margin-left: 14.1%;
   font-family: "Montserrat";
   border-radius: 10px;
   transition: transform .5s ease;
 }
 
 .game-card2 {
-   width: 20%;
+   width: 17%;
    margin-top: 4%;
    position: absolute;
    text-align: center;
    background:  #1D1D1D;
-   margin-left: 40%;
+   margin-left: 32.5%;
    font-family: "Montserrat";
    border-radius: 10px;
    transition: transform .5s ease;
@@ -256,18 +256,76 @@ a { color: inherit;
 
 
 .game-card3 {
-   width: 20%;
+   width: 17%;
    margin-top: 4%;
    position: absolute;
    text-align: center;
    background:  #1D1D1D;
-   margin-left: 65%;
+   margin-left: 50.9%;
+   font-family: "Montserrat";
+   border-radius: 10px;
+    transition: transform .5s ease;
+}
+.game-card4 {
+   width: 17%;
+   margin-top: 4%;
+   position: absolute;
+   text-align: center;
+   background:  #1D1D1D;
+   margin-left: 69.2%;
+   font-family: "Montserrat";
+   border-radius: 10px;
+    transition: transform .5s ease;
+}
+.game-card5 {
+  width: 17%;
+  margin-top: 35%;
+  position: absolute;
+  text-align: center;
+  background: #1D1D1D;
+  margin-left: 14.1%;
+  font-family: "Montserrat";
+  border-radius: 10px;
+  transition: transform .5s ease;
+}
+
+.game-card6 {
+   width: 17%;
+   margin-top: 35%;
+   position: absolute;
+   text-align: center;
+   background:  #1D1D1D;
+   margin-left: 32.5%;
+   font-family: "Montserrat";
+   border-radius: 10px;
+   transition: transform .5s ease;
+}
+
+
+.game-card7 {
+   width: 17%;
+   margin-top: 35%;
+   position: absolute;
+   text-align: center;
+   background:  #1D1D1D;
+   margin-left: 50.9%;
+   font-family: "Montserrat";
+   border-radius: 10px;
+    transition: transform .5s ease;
+}
+.game-card8 {
+   width: 17%;
+   margin-top: 35%;
+   position: absolute;
+   text-align: center;
+   background:  #1D1D1D;
+   margin-left: 69.2%;
    font-family: "Montserrat";
    border-radius: 10px;
     transition: transform .5s ease;
 }
 
-.game-card:hover, .game-card2:hover, .game-card3:hover {
+.game-card:hover, .game-card2:hover, .game-card3:hover, .game-card4:hover,.game-card5:hover, .game-card6:hover, .game-card7:hover, .game-card8:hover {
    border: 2px solid #FF6699;
    border-radius: 10px;
    -webkit-transform: scale(1.05);
@@ -276,32 +334,32 @@ a { color: inherit;
   
 }
 
-.game-card img, .game-card2 img, .game-card3 img {
+.game-card img, .game-card2 img, .game-card3 img, .game-card4 img, .game-card5 img, .game-card6 img, .game-card7 img, .game-card8 img {
    display: block;
    width: 100%;
    border-radius: 10px;
 }
 
-.game-list, .game-list2, .game-list3 {
+.game-list, .game-list2, .game-list3, .game-list4, .game-list5, .game-list6, .game-list7, .game-list8 {
    background: #1D1D1D;
    padding: 15px 0;
    border-radius: 10px;
 }
-.game-list h3, .game-list2 h3, .game-list3 h3 {
+.game-list h3, .game-list2 h3, .game-list3 h3, .game-list4 h3, .game-list5 h3, .game-list6 h3, .game-list7 h3, .game-list8 h3 {
    font-size: 18px;
    font-weight: 400;
    color: #F8F8F8;
    margin: 0 0 10px 0;
 }
 
-.price, .price2, .price3 {
+.price, .price2, .price3, .price4, .price5, .price6, .price7, .price8 {
    font-size: 16px;
    color: #FF6699;
    display: block;
    margin-bottom: 12px;
 }
 
-.button, .button2, .button3 {
+.button, .button2, .button3, .button4, .button5, .button6, .button7, .button8  {
    text-decoration: none;
    display: inline-block;
    padding: 0 12px;
@@ -314,7 +372,7 @@ a { color: inherit;
    border-radius: 5%;
 }
 
-.game-card:hover .button, .game-card2:hover .button2, .game-card3:hover .button3 {
+.game-card:hover .button, .game-card2:hover .button2, .game-card3:hover .button3, .game-card4:hover .button4, .game-card5:hover .button5, .game-card6:hover .button6, .game-card6:hover .button6, .game-card6:hover .button6 {
    background: #fc5a5a;
 }
 /** __________________**/

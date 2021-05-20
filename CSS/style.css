@@ -105,6 +105,7 @@ color: #1D1D1D;
 
 /** Меню - Главная_Каталог_Контакты*/
 .navbar {
+
  margin-top: -10px;
   width: 100%;
   background-color: #1D1D1D;
@@ -140,6 +141,58 @@ color: #1D1D1D;
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    margin-left: -50px;
+  }
+  .game-card{
+   width: 100%;
+    position: relative;
+    float: none;
+    display: block; 
+
+  }
+    .game-card2{
+      width: 100%;
+    position: relative;
+    float: none;
+    display: block; 
+
+  }
+  .game-card3{
+    width: 100%;
+    position: relative;
+    float: none;
+    display: block; 
+  }
+
+  h1{
+    margin-left: -8%;
+    font-size: 10vw;
+  }
+  .s-header p{
+    display: none; 
+  }
+  .s-header {
+  width: 100%;
+  height: 8%;
+
+}
+
+.sticky {
+  position: relative;
+}
+
+h2{
+  margin-left: -15%;
+font-size: 7vw;
+}
+
+
 }
 
 ul {
@@ -221,6 +274,7 @@ ul {
 }
 
 .button, .button2, .button3 {
+   width: 5vw;
    text-decoration: none;
    display: inline-block;
    padding: 0 12px;
